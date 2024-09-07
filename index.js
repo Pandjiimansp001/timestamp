@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
 });
 
 // API endpoint to return the current time or a valid date input
-app.get("/api/:date?", function (req, res) {
+app.get("/api/:date", function (req, res) {
   let date;
 
   // If no date parameter is provided, use the current date
